@@ -1,0 +1,13 @@
+{
+  "name": "showtime_docker",
+  "version": "0.0.1",
+  "description": "Node.js on Docker",
+  "author": "Fortia Financial Solutions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
