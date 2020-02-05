@@ -11,11 +11,7 @@ docker pull mcr.microsoft.com/mssql/server:latest
 docker images
 ```
 ```
-docker run \
--e 'ACCEPT_EULA=Y' \
--e 'SA_PASSWORD=fortia' \
--p 1433:1433 \
--d mcr.microsoft.com/mssql/server:latest
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=fortia' -p 1433:1433 -d mcr.microsoft.com/mssql/server:latest
 ```
 ```
 docker container ls
