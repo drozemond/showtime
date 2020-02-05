@@ -5,22 +5,34 @@ git clone https://github.com/drozemond/showtime.git
 cd showtime
 ```
 ```
-docker pull mcr.microsoft.com/mssql/server:latest
+docker pull rabbitmq:3.7.15-management 
 ```
 ```
 docker images
 ```
 ```
-docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=fortia' -p 1433:1433 -d mcr.microsoft.com/mssql/server:latest
+docker run -p "5672:5672" -p "15672:15672" -d rabbitmq:3.7.15-management  
 ```
 ```
 docker container ls
 ```
 ```
-docker-compose up rabbitmq 
+docker container stop 
+```
+```
+docker container ls
+```
+```
+docker-compose up -d mssql
 ```
 ```
 docker images
+```
+```
+docker container ls
+```
+```
+docker-compose down
 ```
 ```
 docker container ls
@@ -30,4 +42,13 @@ az login
 ```
 ```
  az acr login --name fortia
+```
+```
+docker build -t fortia.azurecr.io/showtime:<firstname> app    
+```
+```
+docker images
+```
+```
+docker push fortia.azurecr/showtime:<firstname>
 ```
