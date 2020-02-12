@@ -82,4 +82,6 @@ docker stack deploy --compose-file docker-compose.yml showtime
 ```
 docker stack services showtime
 ```
-
+```
+docker stack rm showtime
+```
