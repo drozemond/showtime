@@ -17,11 +17,3 @@ services:
         ports:
            - "5672:5672"
            - "15672:15672"
-
-    showtime:
-        build: ./app
-        image: showtime:duncan
-        hostname: showtime
-        container_name: showtime
-        ports: 
-        - "8080:8080"
