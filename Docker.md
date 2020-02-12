@@ -73,3 +73,13 @@ docker compose build showtime
 ```
 docker volume prune
 ```
+```
+docker swarm init --advertise-addr <your-ip-address>
+```
+```
+docker stack deploy --compose-file docker-compose.yml showtime
+```
+```
+docker stack services showtime
+```
+
