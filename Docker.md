@@ -57,12 +57,12 @@ docker push fortia.azurecr/showtime:<firstname>
 ```
 ```
 showtime:
-build: ./app
-image: showtime:<yournamehere>
-hostname: showtime
-container_name: showtime
-ports: 
-- "8080:8080"
+  build: ./app
+  image: showtime:<yournamehere>
+  hostname: showtime
+  container_name: showtime
+  ports: 
+  - "8080:8080"
 ```
 ```
 docker compose build showtime
