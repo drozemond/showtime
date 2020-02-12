@@ -50,10 +50,10 @@ docker build -t fortia.azurecr.io/showtime:<firstname> app
 docker images
 ```
 ```
-docker run -p 8080:8080 fortia.azurecr.fr/showtime:<firstname>
+docker run -p 8080:8080 fortia.azurecr.io/showtime:<firstname>
 ```
 ```
-docker push fortia.azurecr/showtime:<firstname>
+docker push fortia.azurecr.io/showtime:<firstname>
 ```
 ```
 showtime:
